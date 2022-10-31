@@ -1,0 +1,410 @@
+body{
+	margin:0;
+	padding:0;
+	background:url("../newimg/background.jpg");
+	background-attachment:fixed;
+	background-position:center;
+	font-family:"Courier New";
+	letter-spacing:1px;
+	line-height:25px;
+	overflow:hidden;
+}
+*{
+	box-sizing:border-box;
+}
+div.header{
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	overflow:hidden;
+}
+div.header img{
+	width:100px;
+	height:70px;
+}
+div.navigation{
+	padding:10px;
+}
+div.navigation button{
+	background:transparent;
+	color:white;
+	font-size:13px;
+	font-weight:600;
+	border:none;
+	border-bottom:1px solid whitesmoke;
+	-webkit-transition:0.4s;
+	margin-right:20px;
+	padding:10px;
+	background:transparent;
+	border-radius:5px;
+}
+div.navigation button:first-child{
+	background:red;
+}
+div.navigation button:hover{
+	border-bottom:1px solid red;
+}
+div.navigation a{
+	text-decoration:none;
+	color:white;
+}
+div.contact-list{
+	padding:10px 0;
+	background:rgba(0,0,0);
+	width:30%;
+	position:fixed;
+	z-index:1;
+	right:-200%;
+	border-radius:10px;
+	-webkit-transition:1s;
+	height:80%;
+	border:1px solid grey;
+}
+div.contact-list a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	display:block;
+	margin:10% 0;
+	padding:10px;
+	border:1px solid #15171d;
+	border-radius:5px;
+	font-weight:900;
+	-webkit-transition:0.3s;
+}
+div.contact-list a:not(:first-child){
+	margin:20% 0;
+}
+div.contact-list a:hover{
+	-webkit-transform:scale(1.02);
+}
+div.container{
+  -webkit-transition:all 1.5s ease-in-out;
+	position:fixed;
+}
+div.container-wrapper{
+	display:flex;
+	overflow:hidden;
+	width:200vw;
+}
+div.class{
+	width:95%;
+	margin-left:2.5%;
+}
+div.first{
+	width:100vw;
+	align-items:center;
+	position:relative;
+	height:600px;
+}
+div.first div.hero-container{
+	width:50%;
+	float:left;
+}
+div.first div.hero-container img{
+	border-radius:20px;
+	width:100%;
+	margin-top:18%;
+}
+div.first div.missions{
+	float:right;
+	width:49%;
+	margin-top:20%;
+	display:flex;
+	justify-content:space-around;
+}
+div.first div.missions div.mission{
+	width:50%;
+	margin-right:1%;
+	background:rgba(190,190,225,0.5);
+	padding:10px;
+	backdrop-filter:blur(7px) brightness(170%) contrast(45%);
+	color:whitesmoke;
+	border-radius:10px;
+	border:1px solid whitesmoke;
+}
+div.mission h2{
+	color:red;
+}
+div.mission span{
+	font-weight:800;
+}
+div.gallery{
+	width:90%;
+	margin-left:5%;
+	margin-top:10px;
+	overflow-y:scroll;
+	height:100%;
+	background:rgba(225,225,225,0.5);
+	padding:10px;
+	border-radius:20px;
+}
+div.gallery h1{
+	color:red;
+}
+div.gallery span.galleries{
+	
+}
+.column
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.column .row
+{
+  display:flex;
+  flex-direction:column;
+  width:32.5%;
+}
+.column .row img
+{
+  width:100%;
+  padding:5px;
+  border-radius:10px;
+}
+@media screen and (min-width : 200px) and (max-width: 250px){
+div.header{
+		display:flex;
+		justify-content:space-between;
+	}
+	div.header img{
+		display:none;
+	}
+	div.header a{
+		display:none;
+	}
+	div.header button{
+		font-size:20px;
+		border:none;
+		margin-right:10px;
+	}
+	div.navigation{
+		width:100%;
+		display:flex;
+		justify-content: space-between;
+		padding:10px 2px;
+		margin:0;
+	}
+	
+	div.contact-list{
+		width:90%;
+		height:90%;
+	}
+	div.contact-list a{
+		font-weight:500;
+		font-size:17px;
+	}
+	div.contact-list a:not(:first-child){
+		margin:20% 0;
+	}
+	div.first div{
+    display:block;
+	}
+	
+	div.first div.hero-container{
+		width:50%;
+		float:none;
+	}
+	div.first div.hero-container img{
+		border-radius:20px;
+		width:100%;
+		height:20%;
+		margin-top:18%;
+  }
+	div.first div.missions{
+		width:100%;
+		display:block;
+		margin-top:-5px;
+	}
+	div.first div.missions div.mission{
+		display:block;
+		width:100%;
+		margin-top:10px;
+	}
+	div.gallery{
+		height:80%;
+		width:95%;
+		margin-left:2.5%;
+		border-radius:5px;
+		font-size:10px;
+	}
+	.column
+	{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	.column .row
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.column .row img
+	{
+		width:100%;
+		padding:5px;
+		border-radius:10px;
+	}
+}
+@media screen and (min-width : 251px) and (max-width: 300px){
+	div.header{
+		display:flex;
+		justify-content:space-between;
+	}
+	div.header img{
+		display:none;
+	}
+	div.header a{
+		display:none;
+	}
+		div.header button{
+		font-size:20px;
+		border:none;
+		margin-right:10px;
+	}
+	div.navigation{
+		width:100%;
+		display:flex;
+		justify-content: space-between;
+		padding:10px 2px;
+		margin:0;
+	}
+	div.contact-list{
+		width:90%;
+		height:85%;
+	}
+	div.contact-list a:not(:first-child){
+		margin:20% 0;
+	}
+	div.first div{
+    display:block;
+	}
+	
+	div.first div.hero-container{
+		width:50%;
+		float:none;
+	}
+	div.first div.hero-container img{
+		border-radius:20px;
+		width:100%;
+		height:20%;
+		margin-top:18%;
+  }
+	div.first div.missions{
+		width:100%;
+		display:block;
+		margin-top:-5px;
+	}
+	div.first div.missions div.mission{
+		display:block;
+		width:100%;
+		margin-top:10px;
+	}
+	div.gallery{
+		height:80%;
+		width:95%;
+		margin-left:2.5%;
+		border-radius:5px;
+	  font-size:10px;
+	}
+	.column
+	{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	.column .row
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.column .row img
+	{
+		width:100%;
+		padding:5px;
+		border-radius:10px;
+	}
+}
+@media screen and (min-width : 301px) and (max-width: 400px){
+	div.header{
+		display:flex;
+		justify-content:space-between;
+	}
+	div.header img{
+		display:none;
+	}
+	div.header a{
+		display:none;
+	}
+		div.header button{
+		font-size:20px;
+		border:none;
+		margin-right:10px;
+	}
+	div.navigation{
+		width:100%;
+		display:flex;
+		justify-content: space-between;
+		padding:10px 2px;
+		margin:0;
+	}
+	div.contact-list{
+		width:90%;
+		height:85%;
+	}
+	div.contact-list a:not(:first-child){
+		margin:20% 0;
+	}
+	div.first div{
+    display:block;
+	}
+	
+	div.first div.hero-container{
+		width:40%;
+		float:none;
+	}
+	div.first div.hero-container img{
+		border-radius:20px;
+		width:100%;
+		height:20%;
+		margin-top:18%;
+  }
+	div.first div.missions{
+		width:100%;
+		display:block;
+		margin-top:-5px;
+	}
+	div.first div.missions div.mission{
+		display:block;
+		width:100%;
+		margin-top:10px;
+	}
+	div.gallery{
+		height:80%;
+		width:95%;
+		margin-left:2.5%;
+		border-radius:5px;
+	}
+		.column
+	{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	.column .row
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.column .row img
+	{
+		width:100%;
+		padding:5px;
+		border-radius:10px;
+	}
+
+}

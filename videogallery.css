@@ -1,0 +1,136 @@
+*
+{
+  margin:0;
+  padding:0;
+  text-transform:capitalize;
+  font-family:consolas,tahoma ,sans-serif;
+  font-weight:normal;
+  box-sizing: border-box;
+}
+body
+{
+  background:#15171d;
+}
+.heading 
+{
+  color:red;
+  font-size:40px;
+  text-align:center;
+  padding:10px;
+}
+.container{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:15px;
+  align-items: flex-start;
+  padding:5px 2%;
+}
+.container .main-video{
+  background:black;
+  border-radius:10px;
+  padding:10px;
+  color:white;
+}
+.container h2{
+  font-weight:700;
+  font-family:courier new;
+}
+.container .main-video video{
+  width:100%;
+  border-radius:5px;
+}
+.container .main-video .title{
+  color:grey;
+  font-size:20px;
+  padding:15px 0;
+}
+.container .video-list{
+  background:black;
+  border-radius:5px;
+  height:520px;
+  overflow-y:scroll;
+}
+.container .video-list::-webkit-scrollbar{
+  width:7px;
+  background:black;
+}
+.container .video-list::-webkit-scrollbar-track{
+  background:grey;
+  border-radius:50px;
+}
+.container .video-list .vid video{
+  width:100px;
+  border-radius:5px;
+}
+.container .video-list .vid{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  background:#15171d;
+  border-radius:5px;
+  margin:10px;
+  padding:10px;
+  border:rgba(200,200,250,0.1);
+  cursor:pointer;
+  -webkit-transition:0.2s;
+}
+.container .video-list .vid:hover{
+  background:grey;
+}
+.container .video-list .vid.active{
+  background:#12111d;
+}
+.container .video-list .vid.active .title{
+  color:#fff;
+}
+.container .video-list .vid .title{
+  color:#333;
+  font-size:17px;
+}
+@media screen and (min-width:250px) and (max-width:500px){
+  .container{
+    display:block;
+  }
+  .container .main-video{
+    margin-bottom:10%;
+    position:relative;
+    width:100%;
+    margin-top:-10px;
+    padding:2px 10px;
+  }
+   .container h2{
+    font-weight:600;
+    font-size:17px;
+  }
+  .container .main-video .title{
+    font-size:15px;
+  }
+  .heading{
+    font-size:25px;
+  }
+  .container .video-list{
+    position:fixed;
+    width:95%;
+    height:50%;
+    margin-top:-10px;
+  }
+  .container .video-list .vid{
+    
+  }
+  .container .video-list .vid video{
+    width:30%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
