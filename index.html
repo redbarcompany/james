@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<meta name = "viewport" content = "width=device-width , initial-scale = 1">
+<meta http-equiv = "refresh" content = "5;url = welcomepage.html">
+<style>
+*
+{
+  margin:0;
+  padding:0;
+  font-family:consolas;
+}
+body
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#000;
+}
+img{
+  width:10%;
+}
+.wavy
+{
+  position:relative;
+  -webkit-box-reflect:below -12px linear-gradient(transparent,rgba(0,0,0,0.3));
+}
+.wavy span
+{
+  position:relative;
+  display:inline-block;
+  color:goldenrod;
+  text-transform: uppercase;
+  font-size:2em;
+  animation:animate 1s ease-in-out infinite;
+  animation-delay:calc(0.1s * var(--i));
+}
+@-webkit-keyframes animate
+{
+  0%
+  {
+    -webkit-transform:translateY(0px);
+  }
+  20%
+  {
+    -webkit-transform:translateY(-20px);
+  }
+  40%,100%
+  {
+    -webkit-transform:translateY(0px);
+  }
+}
+</style>
+<body>
+<img src = "logo/logo.png" loading = "lazy">
+<div class = "wavy">
+	<span style = "--i:2;">L</span>
+	<span style = "--i:3;">O</span>
+	<span style = "--i:4;">A</span>
+	<span style = "--i:5;">D</span>
+	<span style = "--i:6;">I</span>
+	<span style = "--i:7;">N</span>
+	<span style = "--i:8;">G</span>
+	<span style = "--i:9;">.</span>
+	<span style = "--i:10;">.</span>
+	<span style = "--i:11;">.</span>
+
+</div>
+</body>
+</head>
+</html>
